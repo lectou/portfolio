@@ -1,0 +1,21 @@
+.sidebar-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  height: 46px;
+  width: 46px;
+  background-color: $blue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  @media (max-width: 1155px) {
+    display: flex;
+  }
+  &__icon {
+    height: 30px;
+    width: 30px;
+  }
+}

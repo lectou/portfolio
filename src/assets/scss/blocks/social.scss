@@ -1,0 +1,26 @@
+.social {
+  margin-top: 3rem;
+  background-color: rgba($color: #fff, $alpha: 0.5);
+  margin-bottom: 2rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+  &__link {
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__icon {
+    height: 30px;
+    width: 30px;
+  }
+}
