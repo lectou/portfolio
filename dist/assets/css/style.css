@@ -228,11 +228,30 @@ body.show-sidebar {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar__description {
+.mySkills {
   color: #ffffff;
   font-size: 1.6rem;
   padding: 2rem 0;
   border-top: 1px solid #699bc4;
+}
+
+.mySkills__items {
+  margin: 2rem 0;
+}
+
+.mySkills__items:first-child {
+  margin-bottom: 3rem;
+}
+
+.mySkills__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.mySkills__text {
+  font-size: 1.6rem;
 }
 
 .works {

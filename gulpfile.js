@@ -15,6 +15,7 @@ const panini = require("panini");
 const webp = require("gulp-webp");
 const plumber = require("gulp-plumber");
 const rigger = require("gulp-rigger");
+const ghPages = require('gulp-gh-pages');
 
 
 
@@ -173,6 +174,11 @@ function clean(cb) {
 
     cb();
 }
+
+task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
 
 
 function watchFiles() {
